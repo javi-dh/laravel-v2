@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-  return "test";
-});
+Route::get('task', 'TaskController@create');
+Route::post('task-store', 'TaskController@store');
